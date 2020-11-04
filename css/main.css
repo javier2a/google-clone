@@ -157,10 +157,12 @@ html ,body {
 /* -----------------------footer */
   .footer{
     display: grid; 
-    grid-template-columns: repeat(2,minmax(505px,1fr)); 
+    grid-template-columns: 515px 1fr;
     align-content:center;
     min-height: 45px;
     /* width: 100%; */
+    padding: 1px;
+    box-sizing: border-box;
     background-color: #f2f2f2;
     position: absolute;
     bottom: 0;
@@ -198,3 +200,23 @@ html ,body {
   }
   
 /* end-----------------------footer */
+
+
+/* -----------------------MOBILE */
+
+@media (max-width:870px)
+{
+  .footer{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+  }
+  .footer-left{
+    justify-self: center;
+
+  }
+  .footer-right{
+    justify-self: center;
+  }
+}
+/* end-----------------------MOBILE */
